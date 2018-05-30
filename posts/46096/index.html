@@ -395,7 +395,9 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/posts/46096/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/posts/46096/" itemprop="commentsCount"></span>
+                
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="posts/46096/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -467,7 +469,7 @@
   <p><span>本文链接:</span><a href="/posts/46096/" title="第一次博文">http://keung.asia/posts/46096/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://keung.asia/posts/46096/"  aria-label="复制成功！"></i></span>
   </p>
-  <p><span>许可协议:</span>署名-非商业性使用-禁止演绎 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)" style="text-decoration:underline;">CC BY-NC-SA 4.0</a> 转载请保留原文链接及作者</p>  
+  <p><span>许可协议:</span>本博客所有文章均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)" style="text-decoration:underline;">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>  
 
 </div>
 <script> 
@@ -550,9 +552,12 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     </div>
 
   
@@ -846,6 +851,31 @@
 
   
 
+  
+    <script id="dsq-count-scr" src="https://https-keung-asia.disqus.com/count.js" async></script>
+  
+
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'http://keung.asia/posts/46096/';
+        this.page.identifier = 'posts/46096/';
+        this.page.title = '第一次博文';
+        };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://https-keung-asia.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        loadComments();
+      
+    </script>
+  
+
+
+
 
 
 	
@@ -860,7 +890,6 @@
 
 
 
-  
 
 
 
@@ -868,25 +897,6 @@
 
 
 
-
-
-
-{％if page.comments && theme.gitalk.enable％}
-  <link rel =“stylesheet”href =“https://unpkg.com/gitalk/dist/gitalk.css”>
-  <script src =“https://unpkg.com/gitalk/dist/gitalk.min.js”> </ script>
-   <script type =“text / javascript”>
-        var gitalk =新Gitalk（{
-          clientID：'5bb794a7f99c3aa3a0fb'，
-          clientSecret：'23e1ddcc040d281a2c4b7b25f427039ca12df323'，
-          repo：'heyjude6688.github.io'，
-          所有者：“heyjude6688”，
-          admin：['heyjude6688']，
-          id：location.pathname，
-          distractionFreeMode：'true'
-        }）
-        gitalk.render（ 'gitalk容器'）           
-       </ SCRIPT>
-{％ 万一 ％}
 
   
 

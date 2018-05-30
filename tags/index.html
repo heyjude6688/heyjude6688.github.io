@@ -403,9 +403,12 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     </div>
 
   
@@ -699,6 +702,31 @@
 
   
 
+  
+    <script id="dsq-count-scr" src="https://https-keung-asia.disqus.com/count.js" async></script>
+  
+
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'http://keung.asia/tags/index.html';
+        this.page.identifier = 'tags/index.html';
+        this.page.title = 'tags';
+        };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://https-keung-asia.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        loadComments();
+      
+    </script>
+  
+
+
+
 
 
 	
@@ -713,7 +741,6 @@
 
 
 
-  
 
 
 
@@ -721,25 +748,6 @@
 
 
 
-
-
-
-{％if page.comments && theme.gitalk.enable％}
-  <link rel =“stylesheet”href =“https://unpkg.com/gitalk/dist/gitalk.css”>
-  <script src =“https://unpkg.com/gitalk/dist/gitalk.min.js”> </ script>
-   <script type =“text / javascript”>
-        var gitalk =新Gitalk（{
-          clientID：'5bb794a7f99c3aa3a0fb'，
-          clientSecret：'23e1ddcc040d281a2c4b7b25f427039ca12df323'，
-          repo：'heyjude6688.github.io'，
-          所有者：“heyjude6688”，
-          admin：['heyjude6688']，
-          id：location.pathname，
-          distractionFreeMode：'true'
-        }）
-        gitalk.render（ 'gitalk容器'）           
-       </ SCRIPT>
-{％ 万一 ％}
 
   
 

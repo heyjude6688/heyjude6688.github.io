@@ -521,12 +521,13 @@
   <span class="author" itemprop="copyrightHolder">KeiSzeto</span>
 
   
-
+           
   
 </div>
 
 
 
+<!--
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
 
@@ -538,10 +539,29 @@
 
   <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Mist</a> v6.3.0</div>
 
+-->
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 
@@ -671,31 +691,24 @@
 
 
 
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-  
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(function (item) {
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'skiuT7BPQUhdLqB2zcCVg8yt-gzGzoHsz',
-        appKey: 'lyPVj3Ibt8dC469VgQbHMUu1',
-        placeholder: '少年 不想留个爪印嘛',
-        avatar:'mm',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
 
 
+{％if page.comments && theme.gitalk.enable％}
+  <link rel =“stylesheet”href =“https://unpkg.com/gitalk/dist/gitalk.css”>
+  <script src =“https://unpkg.com/gitalk/dist/gitalk.min.js”> </ script>
+   <script type =“text / javascript”>
+        var gitalk =新Gitalk（{
+          clientID：'5bb794a7f99c3aa3a0fb'，
+          clientSecret：'23e1ddcc040d281a2c4b7b25f427039ca12df323'，
+          repo：'heyjude6688.github.io'，
+          所有者：“heyjude6688”，
+          admin：['heyjude6688']，
+          id：location.pathname，
+          distractionFreeMode：'true'
+        }）
+        gitalk.render（ 'gitalk容器'）           
+       </ SCRIPT>
+{％ 万一 ％}
 
   
 

@@ -1659,12 +1659,12 @@ pre .javascript .function {
   font-family: UKIJ Ekran;
 }
 .my_post_copyright {
-  width: 85%;
+  width: 91%;
   max-width: 45em;
   margin: 2.8em auto 0;
   padding: 0.5em 1em;
   border: 1px solid #d3d3d3;
-  font-size: 0.93rem;
+  font-size: 0.9rem;
   line-height: 1.6em;
   word-break: break-all;
   background: rgba(255,255,255,0.4);
@@ -1674,7 +1674,7 @@ pre .javascript .function {
 }
 .my_post_copyright span {
   display: inline-block;
-  width: 5.2em;
+  width: 4.8em;
   color: #b5b5b5;
   font-weight: bold;
 }
@@ -2010,7 +2010,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #79ffa7;
+  background: #6bfca6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2441,6 +2441,14 @@ img:hover {
 .site-pv .busuanzi-value,
 .page-pv .busuanzi-value {
   margin: 0 5px;
+}
+.gt-header a,
+.gt-comments a,
+.gt-popup a {
+  border-bottom: none;
+}
+.gt-container .gt-popup .gt-action.is--active:before {
+  top: 0.7em;
 }
 .page-archive .archive-page-counter {
   position: relative;

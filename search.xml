@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Markdown语法]]></title>
     <url>%2Fposts%2F22648%2F</url>
-    <content type="text"><![CDATA[Bootstrap Callout使用方式1&#123;% note class_name %&#125; Content &#123;% endnote %&#125; 效果如下我是效果 其中 class_name 可以为下列表中的值： class_name Color null 对应左边颜色 default 对应左边颜色 primary 对应左边颜色 success 对应左边颜色 info 对应左边颜色 warning 对应左边颜色 danger 对应左边颜色 文本居中引用12345&lt;!-- 标签方式，要求版本在0.4.5或以上 --&gt;&#123;% centerquote %&#125; content &#123;% endcenterquote %&#125;&lt;!-- 标签别名 --&gt;&#123;% cq %&#125; content &#123;% endcq %&#125; 效果^1如下我是文本居中引用效果]]></content>
+    <content type="text"><![CDATA[Bootstrap Callout使用方式1&#123;% note class_name %&#125; Content &#123;% endnote %&#125; 效果如下我是效果 其中 class_name 可以为下列表中的值： class_name Color null 对应左边颜色 default 对应左边颜色 primary 对应左边颜色 success 对应左边颜色 info 对应左边颜色 warning 对应左边颜色 danger 对应左边颜色 文本居中引用12345&lt;!-- 标签方式，要求版本在0.4.5或以上 --&gt;&#123;% centerquote %&#125; content &#123;% endcenterquote %&#125;&lt;!-- 标签别名 --&gt;&#123;% cq %&#125; content &#123;% endcq %&#125; 效果如下文本居中引用效果 标题四级 control+1/2/3/41234# 一级 ### 二级 ##### 三级 ####### 四级 #### 分割线水平标尺 control+R 删除线1~~删除线~~ 百年孤独 层级列表1*/-/+ content 效果 创建表格格式123| A | B |C || --- |:---:| ---:||1 |2 |3 | 效果如下 A B C 1 2 3 表格前面留一行空白，冒号决定对齐方向(默认左对齐)，如果表格中需要竖杠用&amp;#124;代替 加粗斜体control+B 粗体control+I 斜体 引用可以嵌套多层引用123&gt; first&gt;&gt; second&gt;&gt;&gt; third 效果如下 first second third 超链接格式12文字：[content](网址)图片：![content](网址) 效果作者 转义字符用 \ 将特殊字符如 * &gt; ! - 变成普通字符]]></content>
       <categories>
         <category>technology</category>
       </categories>

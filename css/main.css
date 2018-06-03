@@ -1969,7 +1969,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #63a2ff;
+  background: #ed2aa2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2974,4 +2974,32 @@ hr {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+code {
+  color: #f90;
+  background: #fff;
+  border-radius: 3px;
+}
+.menu .menu-item a {
+  font-size: 15px;
+  color: #f00;
+}
+.footer {
+  background: transparent;
+  font-size: 15px;
+}
+.header {
+  background: transparent;
+}
+.site-description {
+  color: #0593d3;
+}
+.site-title {
+  color: #f00;
+}
+.btn {
+  color: #f00;
+}
+.links-of-blogroll-title {
+  color: #f3c;
 }

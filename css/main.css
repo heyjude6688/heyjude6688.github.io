@@ -937,7 +937,7 @@ pre .javascript .function {
   display: inline-block;
   padding: 0 20px;
   font-size: 14px;
-  color: #f00;
+  color: Black;
   background: transparent;
   border: 2px solid #222;
   text-decoration: none;
@@ -1959,7 +1959,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0a61f2;
+  background: #ff62ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2974,6 +2974,10 @@ code {
   font-size: 15px;
   color: #4a86e8;
 }
+.menu .menu-item a:hover {
+  background: Black;
+  color: #fff;
+}
 .footer {
   background: transparent;
   font-size: 15px;
@@ -2987,8 +2991,11 @@ code {
 .site-title {
   color: #4a86e8;
 }
+.site-title:hover {
+  color: Black;
+}
 .btn {
-  color: #f00;
+  color: #f0f;
 }
 .links-of-blogroll-title {
   color: #f3c;
@@ -3000,4 +3007,7 @@ code {
 }
 .post-body p a:hover {
   color: #f90;
+}
+.footer.icon {
+  color: #008000;
 }

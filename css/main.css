@@ -1959,7 +1959,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9efaff;
+  background: #0dff0d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2975,8 +2975,8 @@ code {
   color: #4a86e8;
 }
 .menu .menu-item a:hover {
-  background: Black;
-  color: #fff;
+  background: #4a86e8;
+  color: #e1e1e1;
 }
 .footer {
   background: transparent;

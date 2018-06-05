@@ -1959,7 +1959,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c1ffff;
+  background: #61bb70;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2967,8 +2967,7 @@ hr {
 }
 code {
   color: #f90;
-  background: #fff;
-  border-radius: 3px;
+  background: transparent;
 }
 .menu .menu-item a {
   font-size: 15px;
@@ -2985,9 +2984,6 @@ code {
 .header {
   background: transparent;
 }
-.site-description {
-  color: #0593d3;
-}
 .site-title {
   color: #4a86e8;
 }
@@ -2998,7 +2994,7 @@ code {
   color: #f0f;
 }
 .links-of-blogroll-title {
-  color: #f3c;
+  color: #f6f;
 }
 .post-body p a {
   color: #4a86e8;
